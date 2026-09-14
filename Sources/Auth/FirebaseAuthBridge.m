@@ -1,4 +1,4 @@
-#import "FirebaseBridge.h"
+#import "FirebaseAuthBridge.h"
 
 __attribute__((constructor))
 static void _RegisterAuthBridgeDelegateProtocol(void) {

@@ -1,5 +1,5 @@
 //
-//  FirebaseBridge.h
+//  FirebaseAuthBridge.h
 //  ogwu
 //
 //  Created by Kenechukwu Akubue on 07/09/2026.
