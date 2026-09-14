@@ -57,7 +57,7 @@ Firebase SDK (blocks)
 
 This is source you drop into your kivy-ios Xcode project — it is **not** a CocoaPod, framework, or pip package, since it has to be compiled directly into your app target alongside your existing Firebase setup.
 
-1. Copy `FirebaseBridge.h` and `FirebaseBridge.m` (and any other `*Bridge.h`/`.m` pairs you need) into your Xcode project.
+1. Copy `FirebaseAuthBridge.h` and `FirebaseAuthBridge.m` (and any other `*Bridge.h`/`.m` pairs you need) into your Xcode project.
 2. Make sure they're checked under your app target's **Compile Sources** build phase.
 3. If your project compiles under manual reference counting (MRC) by default, either:
    - leave the bridge files as-is (they're written to be MRC-compatible, using `unsafe_unretained` instead of `weak`), or
@@ -156,7 +156,7 @@ if not success:
 
 ## Contributing
 
-New bridges should follow the existing pattern in `FirebaseBridge.h`/`.m`:
+New bridges should follow the existing pattern in `FirebaseAuthBridge.h`/`.m`:
 
 1. Add a `@protocol FooBridgeDelegate` with `@optional` methods for each callback.
 2. Add one line to the shared `_RegisterFirebaseBridgeProtocols()` constructor for the new protocol.

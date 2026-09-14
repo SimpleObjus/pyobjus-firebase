@@ -5,8 +5,6 @@ static void _RegisterAuthBridgeDelegateProtocol(void) {
     (void)@protocol(FirebaseAuthBridgeDelegate);
 }
 
-#pragma mark - Auth
-
 @implementation FirebaseAuthBridge
 
 - (void)addAuthStateDidChangeListener {

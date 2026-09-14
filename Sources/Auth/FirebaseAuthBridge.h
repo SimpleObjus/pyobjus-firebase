@@ -11,7 +11,6 @@
 #import <UIKit/UIKit.h>
 #import <GoogleSignIn/GoogleSignIn.h>
 
-#pragma mark - Auth
 
 @protocol FirebaseAuthBridgeDelegate <NSObject>
 @optional
